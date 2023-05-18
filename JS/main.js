@@ -34,12 +34,10 @@ function unicString() {
     document.getElementById("ourText").innerText = longest;
 }
 
-
 function sortTable(i) {
     let sortedRows = Array.from(table.rows).slice(1);
     sortedRows.sort((rowA, rowB) => rowA.cells[i].innerHTML > rowB.cells[i].innerHTML ? 1 : -1);
     table.tBodies[0].append(...sortedRows);
-    console.log(Event.AT_TARGET);
 }
 
 
